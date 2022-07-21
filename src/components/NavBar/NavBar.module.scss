@@ -1,0 +1,26 @@
+@import '../../styles/settings.scss';
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: darken($color-dark, 3%);
+  padding: $base-size *2;
+}
+
+.icon {
+  a {
+    color: $color-light;
+    font-size: $base-size * 2;
+    margin-left: $base-size * 2;
+  }
+}
+
+.links {
+  a {
+    padding-right: $base-size * 2;
+    text-decoration: none;
+    color: $color-light;
+
+  }
+}
