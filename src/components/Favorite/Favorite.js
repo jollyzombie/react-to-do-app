@@ -4,6 +4,7 @@ const Favorite = () => {
   return (
     <div>
       <PageTitle>Favorite</PageTitle>
+      <p>Lorem Impsum</p>
     </div>
   );
 };

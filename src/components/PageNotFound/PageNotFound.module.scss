@@ -1,0 +1,14 @@
+@import '../../styles/settings.scss';
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: ($base-size * 15);
+  text-transform: uppercase;
+  padding-top: $base-size * 6;
+
+  span {
+    display: block;
+    font-size: ($base-size * 4);
+  }
+}
