@@ -6,14 +6,14 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addCard } from '../../redux/store';
 
-const CardForm = (columnId) => {
+const CardForm = ({ columnId }) => {
   const [title, setTitle] = useState('');
 
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addCard({ ...columnId, title }));
+    dispatch(addCard({ columnId, title }));
     setTitle('');
   };
 

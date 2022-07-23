@@ -9,7 +9,7 @@ const NavBar = () => {
       <Container>
         <div className={styles.nav_wrapper}>
           <div className={styles.icon}>
-            <a href='/' className='fa fa-tasks'></a>
+            <NavLink className='fa fa-tasks' to='/'></NavLink>
           </div>
           <div className={styles.links}>
             <ul>
