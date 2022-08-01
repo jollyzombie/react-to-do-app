@@ -1,0 +1,27 @@
+@use 'sass:math';
+@import '../../styles/settings.scss';
+
+.column {
+  width: 50%;
+  background: $color-light;
+  margin: 0 auto;
+  padding: ($base-size * 1.5);
+  border-radius: $radius;
+  color: $color-dark;
+  display: flex;
+  justify-content: space-between;
+
+  &:last-child {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.cards {
+  padding: math.div($base-size, 3) 0;
+  width: 100%;
+}
+
+@media (max-width: 910px) {
+}
