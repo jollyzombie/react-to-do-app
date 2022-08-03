@@ -4,7 +4,7 @@ import styles from './CardForm.module.scss';
 
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addCard } from '../../redux/store';
+import { addCard } from '../../redux/cardsRedux';
 
 const CardForm = ({ columnId }) => {
   const [title, setTitle] = useState('');
@@ -13,7 +13,7 @@ const CardForm = ({ columnId }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addCard({ columnId, title }));
+    dispatch(addCard({ ...columnId, title }));
     setTitle('');
   };
 

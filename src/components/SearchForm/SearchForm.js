@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { searchUpdate } from '../../redux/store';
+import { updateSearch } from '../../redux/searchTxtRedux';
 
 const SearchForm = () => {
   const [searchTxt, setSearchTxt] = useState('');
@@ -13,12 +13,12 @@ const SearchForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(searchUpdate(searchTxt));
+    dispatch(updateSearch(searchTxt));
     setSearchTxt('');
   };
 
   useEffect(() => {
-    dispatch(searchUpdate(searchTxt));
+    dispatch(updateSearch(searchTxt));
   }, []);
 
   return (

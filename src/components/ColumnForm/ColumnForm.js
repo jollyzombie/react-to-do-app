@@ -4,7 +4,7 @@ import TextInput from '../TextInput/TextInput';
 
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addColumn } from '../../redux/store';
+import { addColumn } from '../../redux/columnsRedux';
 
 const ColumnForm = ({ listId }) => {
   const [title, setTitle] = useState('');

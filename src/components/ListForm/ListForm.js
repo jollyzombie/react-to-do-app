@@ -4,8 +4,7 @@ import styles from './ListForm.module.scss';
 
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addList } from '../../redux/store';
-
+import { addList } from '../../redux/listsRedux';
 
 const ListForm = () => {
   const [title, setTitle] = useState('');
@@ -15,7 +14,7 @@ const ListForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addList({title, description}));
+    dispatch(addList({ title, description }));
     setTitle('');
     setDescription('');
   };
@@ -29,6 +28,6 @@ const ListForm = () => {
       <Button>Add new list</Button>
     </form>
   );
-}
+};
 
 export default ListForm;
