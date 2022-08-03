@@ -1,5 +1,6 @@
 @import '../../styles/settings.scss';
 
+
 .card {
   position: relative;
   background: $color-light;
@@ -8,28 +9,35 @@
   margin: 0 0 $base-size 0;
   border-radius: $radius;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-weight: bold;
-}
 
-.favButton {
-  border: none;
-  cursor: pointer;
-  background: none;
-  border-radius: $radius;
 
-  &:hover {
-    color: $color-success;
-    transition: $transition;
+  .favButton {
+    border: none;
+    cursor: pointer;
+    background: none;
+
+    &:hover {
+      color: $color-success;
+      transition: $transition;
+    }
   }
-}
 
-.isFavorite {
-  color: $color-success;
-  transform: scale(120%);
+  .removeButton {
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
 
-  &:hover {
-    color: $color-dark;
-    transition: $transition;
+  .isFavorite {
+    color: $color-success;
+    transform: scale(120%);
+
+    &:hover {
+      color: $color-dark;
+      transition: $transition;
+    }
   }
 }
